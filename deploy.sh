@@ -13,12 +13,11 @@ cd dist/
 # 如果是发布到自定义域名
 echo 'www.jijiandsu.store' > CNAME
 
-# git clone https://github.com/suxin1993/suxin1993.github.io.git
 git init
 git add -A
 git commit -m 'deploy'
 
-# # 如果你想要部署到 https://<USERNAME>.github.io
+# 如果你想要部署到 https://<USERNAME>.github.io
 git push -f https://github.com/suxin1993/suxin1993.github.io.git master
 # git push -u origin master
 
