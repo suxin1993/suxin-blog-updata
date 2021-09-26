@@ -1,11 +1,12 @@
 /*
  * @Author: your name
  * @Date: 2021-09-15 18:16:52
- * @LastEditTime: 2021-09-25 14:17:29
+ * @LastEditTime: 2021-09-26 20:17:57
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /suxin-blog-updata/docs/.vuepress/config.js
  */
+let base = process.argv[4] == "gitlee" ? "/suxin1993.gitee.io/" : ""
 module.exports = {
     // 站点配置
     lang: 'zh-CN',
@@ -18,7 +19,7 @@ module.exports = {
 
     dest: './dist', // 构建后目录
 
-    base: '',
+    base: base,
 
 
 
@@ -51,6 +52,7 @@ module.exports = {
 
         ],
     },
+    lastUpdated: 'Last Updated', // string | boolean
 
     //搜索插件
     plugins: [
